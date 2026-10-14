@@ -23,7 +23,7 @@
 \subtitle{Définitions et opérations}
 
 \begin{frame}
-  
+
   \debutmontitre
 
   \pause
@@ -33,7 +33,7 @@
 \setbeamercovered{transparent=50}
 \begin{minipage}{0.6\textwidth}
   \begin{itemize}
-    \item<3-> Définition 
+    \item<3-> Définition
     \item<4-> Partie réelle, partie imaginaire
     \item<5-> Calculs
     \item<6-> Conjugué, module
@@ -51,17 +51,17 @@
 
 \begin{frame}
 
-$$\Nn \stackrel{x+5=2}{\longhookrightarrow}  \Zz \pause 
-\stackrel{2x=-3}\longhookrightarrow \Qq \pause 
-\stackrel{x^2=\frac12}\longhookrightarrow \Rr \pause 
-\stackrel{x^2=-\sqrt2}\longhookrightarrow \pause 
+$$\Nn \stackrel{x+5=2}{\longhookrightarrow}  \Zz \pause
+\stackrel{2x=-3}\longhookrightarrow \Qq \pause
+\stackrel{x^2=\frac12}\longhookrightarrow \Rr \pause
+\stackrel{x^2=-\sqrt2}\longhookrightarrow \pause
 \Cc$$
 
 \pause
 
 
 \begin{theoreme}[(d'Alembert-Gauss)]
-L'équation 
+L'équation
 $$a_nx^n+a_{n-1}x^{n-1}+\cdots + a_2 x^2 + a_1x+a_0=0$$
 avec $a_i \in \Cc$ (ou $a_i \in \Rr$)
 a ses solutions $x_1,x_2,\ldots,x_n$ dans $\Cc$
@@ -75,11 +75,12 @@ a ses solutions $x_1,x_2,\ldots,x_n$ dans $\Cc$
 
 \begin{frame}
   Un \defi{nombre complexe} est un couple $(a, b) \in \Rr^2$
-  noté $a + \ii b$ 
+  noté $a + \ii b$
 
 \pause
 
-avec la convention 
+
+avec la propriété fondamentale
 \mybox{$\ii ^2 = - 1$}
 
 \pause
@@ -95,10 +96,10 @@ avec la convention
 
 \pause
 
-\qquad $z = a + \ii b$ \qquad $z' = a' + \ii b'$ 
+\qquad $z = a + \ii b$ \qquad $z' = a' + \ii b'$
 \begin{itemize}
-  \item \evidence{addition} \quad  $(a + \ii b) + (a' + \ii b') = 
-(a + a') + \ii  (b + b')$ 
+  \item \evidence{addition} \quad  $(a + \ii b) + (a' + \ii b') =
+(a + a') + \ii  (b + b')$
 \pause \pause
   \item \evidence{multiplication} \  $(a + \ii b) \times (a' + \ii b')
   = (aa' - bb') + \ii  (ab' + ba')$
@@ -114,14 +115,14 @@ avec la convention
 \hspace{2em}
 \begin{minipage}{0.5\linewidth}
 $z = a + \ii b \in \Cc$ \\[0.5em]
-$\Re(z) = a$ est la \defi{partie réelle}  \\[0.5em]
-$\Im(z) = b$ est la \defi{partie imaginaire}
+$\Re(z) = a \in \Rr$ est la \defi{partie réelle}  \\[0.5em]
+$\Im(z) = b \in \Rr$ est la \defi{partie imaginaire}
 \end{minipage}%
 \pause
 \hspace{-1em}
 \begin{minipage}{0.2\linewidth}
 \myfigure{0.9}{
-\tikzinput{fig_complexes04} 
+\tikzinput{fig_complexes04}
 }
 \end{minipage}
 % Par identification de $\Cc$ \`a $\Rr^2$,
@@ -135,7 +136,7 @@ $$ z = z'\quad \Longleftrightarrow \quad \left\{ \begin{array}{l}
    \end{array} \right. $$
 
 % En particulier un nombre complexe est réel si et seulement si sa partie imaginaire
-% s'annule. Un nombre complexe est nul si et et seulement 
+% s'annule. Un nombre complexe est nul si et et seulement
 % si sa partie réelle et sa partie imaginaire s'annule.
 
 \end{frame}
@@ -147,15 +148,15 @@ $$ z = z'\quad \Longleftrightarrow \quad \left\{ \begin{array}{l}
 % Quelques définitions et calculs sur les nombres complexes.
 \begin{itemize}
   \item L'\defi{opposé} de $z = a + \ii b$ est $- z = (- a) + \ii (-b) = - a - \ii b$
-  
-  \item La \defi{multiplication par un scalaire} $\lambda \in \Rr$ : $\lambda \times 
+
+  \item La \defi{multiplication par un scalaire} $\lambda \in \Rr$ : $\lambda \times
   z = (\lambda a) + \ii(\lambda b)$
 \end{itemize}
 
 \bigskip
 
 \myfigure{0.9}{
-\tikzinput{fig_complexes06} 
+\tikzinput{fig_complexes06}
 }
 \end{frame}
 
@@ -165,25 +166,25 @@ $$ z = z'\quad \Longleftrightarrow \quad \left\{ \begin{array}{l}
 
 \vspace*{1cm}
 
- \begin{itemize} 
+ \begin{itemize}
   \item L'\defi{inverse} : si $z \neq 0$, il existe un unique $z' \in \Cc$ tel
   que $z \times z' = 1$
 \pause
-\[ z' = \frac{1}{z} = \frac{a - \ii b}{a^2 + b^2}  \]
+\[ z' = \frac{1}{z} = \frac{1}{a + ib} = \frac{a - \ii b}{a^2 + b^2}  \]
 
 \pause
 %\only<7>
 {
-  \item % La division : 
-$\dfrac{z}{z'}=z \times \dfrac{1}{z'}$\\[1em]
-     
+  \item % La division :
+$\dfrac{z}{z'}=z \times \dfrac{1}{z'} = 1$\\[1em]
+
 \pause
 
   \item  si \quad  $zz' = 0$ \quad  alors \quad  $z = 0$ ou $z' = 0$ \qquad  (\defi{intégrité})\\[1em]
 
 \pause
-  
-  \item % Puissances : 
+
+  \item % Puissances :
 $z{\,}^n = z \times \cdots \times z$ \quad ; \quad  $z{\,}^0 = 1$ \quad ; \quad $z{\,}^{- n} = \big( \frac 1 z \big)^n$
 }
 
@@ -199,7 +200,7 @@ $z{\,}^n = z \times \cdots \times z$ \quad ; \quad  $z{\,}^0 = 1$ \quad ; \quad 
 
 % \pause
 % \uncover<2-6>{
-% 
+%
 % \begin{proof}
 % $z=a+\ii b$, on cherche $z'=a'+\ii b'$ tel que $z \times z'=1$\\[0.5em]
 % \pause
@@ -208,21 +209,21 @@ $z{\,}^n = z \times \cdots \times z$ \quad ; \quad  $z{\,}^0 = 1$ \quad ; \quad 
 % \[ \left\{ \begin{array}{cc}
 %        aa' - bb' = 1 & \uncover<3,4->{\color{blue}\times a}
 %        \\
-%        ab' + ba' = 0 & \uncover<3,4->{\color{blue}\times b}  
-%      \end{array} \right. 
+%        ab' + ba' = 0 & \uncover<3,4->{\color{blue}\times b}
+%      \end{array} \right.
 % \uncover<4->{
 % \quad \text{implique}  \quad \left\{ \begin{array}{cc}
-%        a^2 a' - ab b' = a 
+%        a^2 a' - ab b' = a
 %        \\
 % 		ab b' + b^2 a' = 0
 %      \end{array} \right.
-% }     
+% }
 % \]
 % \pause
 % \pause
 % \pause
-% 
-% %   en écrivant $a L_1 + b L_2$ (on multiplie la ligne ($L_1$) par $a$, 
+%
+% %   en écrivant $a L_1 + b L_2$ (on multiplie la ligne ($L_1$) par $a$,
 % % la ligne ($L_2$) par $b$ et on additionne)
 % %  et $- bL_1 + aL_2$ on obtient
 %   \[\text{ d'où }\quad \left\{ \begin{aligned}
@@ -233,9 +234,9 @@ $z{\,}^n = z \times \cdots \times z$ \quad ; \quad  $z{\,}^0 = 1$ \quad ; \quad 
 %        &b' = - \frac{b}{a^2 + b^2}
 %      \end{aligned} \right. \]
 % \vspace{0.5em}
-% 
+%
 % \pause
-% 
+%
 % L'inverse de $z$ est donc
 % \[ z' = \frac{1}{z} = \frac{a}{a^2 + b^2} + \ii  \frac{- b}{a^2 + b^2} =
 %      \frac{a - \ii b}{a^2 + b^2}  \]
@@ -264,7 +265,7 @@ $$\text{Ou encore} \qquad \displaystyle \sum_{k=0}^n z^k = \dfrac{1 - z^{n + 1}}
 \begin{proof}
 \normalsize
 $\begin{array}{rl}
-(1 + z + z^2 + \cdots + z^n) \times (1 - z) 
+(1 + z + z^2 + \cdots + z^n) \times (1 - z)
   \pause
   &= 1 + z + z^2 + \cdots + z^n \\
   &\hphantom{= 1 } -z -z^2 - \cdots - z^n - z^{n+1} \\
@@ -287,7 +288,7 @@ $\begin{array}{rl}
 
 
   \uncover<2->{Le \defi{module} de $z = a + \ii b$ est \myboxinline{$|z| = \sqrt{a^2 + b^2} = \sqrt{z\overline z}$}\\[0.5em]}
- 
+
   \uncover<3-4>{\centerline{$z \times \overline z = (a+\ii b)(a-\ii b) = a^2+b^2$} }
 
 \uncover<1-4>{
@@ -299,22 +300,22 @@ $\begin{array}{rl}
 \pause
 \pause
 \pause
-\pause 
+\pause
 
 \vspace{-11em}
 
 \begin{itemize}
   \item $\overline{z + z'} = \overline{z} + \overline{z'}$,\quad $\overline{\overline{z}} =
   z$,\quad $\overline{zz'} = \overline{z}  \overline{z'}$
-  
+
   \item $z = \overline{z} \Longleftrightarrow z \in \Rr$
-  
+
   \item $\left| z \right|^2 = z \times \overline{z}$,\quad $\left| \overline{z} \right| =
   \left| z \right|$, \quad $\left| zz' \right| = \left| z \right|  \left| z'
   \right|$
-  
+
   \item $\left| z \right| = 0 \Longleftrightarrow z = 0$
-  
+
   \item Inégalité triangulaire  $\left| z + z' \right| \leqslant \left| z
   \right| + \left| z' \right|$
 \end{itemize}
@@ -367,7 +368,7 @@ Celle des diagonales : $|z+z'|$, $|z-z'|$
 \[  \begin{aligned}
   \qquad  \alert{D^2 + d^2} & = \left| z + z' \right|^2 + \left| z - z' \right|^2  \\
    \pause
-   & =  \left( z + z'     \right)  \overline{\left( z + z' \right)} + \left( z - z' \right) 
+   & =  \left( z + z'     \right)  \overline{\left( z + z' \right)} + \left( z - z' \right)
     \overline{\left( z - z' \right)} \\
     \pause
     & =  z \overline{z} + z \overline{z'} + z'  \overline{z} + z'  \overline{z'} + z
@@ -397,9 +398,9 @@ Celle des diagonales : $|z+z'|$, $|z-z'|$
   \vspace{1em}
   \item Calculer $1 - 2\ii + \frac{\ii}{1 - 2\ii}$.
   \item \'Ecrire sous la forme $a+\ii b$ les nombres complexes $(1+\ii)^2$,
-$(1+\ii)^3$, $(1+\ii)^4$, $(1+\ii)^8$. 
+$(1+\ii)^3$, $(1+\ii)^4$, $(1+\ii)^8$.
   \item En déduire $1+(1+\ii)+(1+\ii)^2+\cdots +(1+\ii)^7$.
-  \item Soit $z\in \Cc$ tel que $|1+ \ii z| = |1-\ii z|$, montrer que $z \in \Rr$. 
+  \item Soit $z\in \Cc$ tel que $|1+ \ii z| = |1-\ii z|$, montrer que $z \in \Rr$.
   \item Montrer que si $|\Re z| \le |\Re z'|$ et $|\Im z| \le |\Im z'|$ alors
 $|z| \le |z'|$, mais que la réciproque est fausse.
   \item Montrer que $1 / \overline{z} = z/\left| z \right|^2$ (pour $z\neq 0$).
